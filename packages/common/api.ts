@@ -1,0 +1,1 @@
+export const ApiInterface = {"whenAppReady":"handler","openMainWindow":"handler","isAppReady":"handler"}

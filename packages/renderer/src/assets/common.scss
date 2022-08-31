@@ -1,0 +1,88 @@
+@font-face {
+	font-family: Alibaba;
+	src: url('./fonts/AlibabaPuHuiTi-2-55-Regular.ttf');
+}
+
+* {
+	box-sizing: border-box;
+}
+div,
+span,
+p {
+	cursor: default;
+}
+.flex {
+	display: flex;
+}
+
+.fyc {
+	align-items: center;
+}
+
+.fye {
+	align-items: flex-end;
+}
+
+.fys {
+	align-items: flex-start;
+}
+
+.fyb {
+	align-items: baseline;
+}
+
+.fxc {
+	justify-content: center;
+}
+
+.fxsb {
+	justify-content: space-between;
+}
+
+.fxsa {
+	justify-content: space-around;
+}
+
+$gaps: 0, 5, 6, 8, 10, 12, 14, 15, 16, 18, 20, 24, 28, 30;
+$unit: 1px;
+
+@each $gap in $gaps {
+	.xgap-#{$gap} {
+		column-gap: $gap * $unit;
+	}
+
+	.ygap-#{$gap} {
+		row-gap: $gap * $unit;
+	}
+
+	.my-#{$gap} {
+		margin: $gap * $unit auto;
+	}
+
+	.mx-#{$gap} {
+		margin-left: $gap * $unit;
+		margin-right: $gap * $unit;
+	}
+
+	.ml-#{$gap} {
+		margin-left: $gap * $unit;
+	}
+
+	.mr-#{$gap} {
+		margin-right: $gap * $unit;
+	}
+
+	.mb-#{$gap} {
+		margin-bottom: $gap * $unit;
+	}
+
+	.mt-#{$gap} {
+		margin-top: $gap * $unit;
+	}
+}
+
+$bg: #202a35;
+$bg-hover: #153a5d;
+$bg-title: #131d27;
+$text-normal: transparentize(white, 0.2);
+$text-description: #e3e4e6;
